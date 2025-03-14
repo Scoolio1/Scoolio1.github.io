@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Century Gothic', sans-serif;
+            color: #050609;
+            text-align: center;
+            background-color: #000000;
+        }
+
+        h1 {
+            font-size: 50px;
+            color: #050609;
+        }
+
+        a, .button {
+            font-size: 15px;
+            color: #87677B;
+            text-decoration: none;
+            padding: 10px;
+            display: inline-block;
+            background-color: transparent;
+            border: 1px solid #87677B;
+            border-radius: 5px;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .button:hover {
+            transform: scale(1.1);
+        }
+
+        header, footer {
+            background-color: #9B9FB5;
+            width: 100%;
+            padding: 10px 0;
+        }
+
+        footer p {
+            font-size: 10px;
+            color: #050609;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .content img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropbtn {
+            background-color: #9B9FB5;
+            color: black;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #9B9FB5;
+            min-width: 150px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CV</h1>
+        <nav>
+            <div class="dropdown">
+                <button class="dropbtn">Valikko</button>
+                <div class="dropdown-content">
+                    <a href="nettisivutyö.html">Etusivu</a>
+                    <a href="cv.html">CV</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="contact.html">Yhteystiedot</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="content">
+        <img src="cv leevi 8.3.25 2.JPG" alt="CV kuva">
+        <p><a href="cv leevi 8.3.25.pdf" download>Lataa CV painamalla tästä</a></p>
+        <div class="buttons">
+            <a href="portfolio.html" class="button">Portfolio</a>
+            <a href="contact.html" class="button">Yhteystiedot</a>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Scoolio</p>
+    </footer>
+</body>
+</html>
